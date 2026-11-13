@@ -169,8 +169,8 @@ export const Sidebar = () => {
           <div>
             <p class="text-xs font-bold text-zinc-500 uppercase mb-2">Attraction Matrix</p>
 
-            {/* Toolbar: same 4-column grid and inset as the matrix so buttons line up with its cells */}
-            <div class="grid grid-cols-4 gap-1 px-[9px] mb-2">
+            {/* Toolbar: styled like a one-row matrix, so buttons line up with its cells */}
+            <div class="grid grid-cols-4 gap-1 p-2 mb-2 bg-white/5 rounded-lg border border-white/10">
               <button
                 onClick={() => runCopy(copySettings)}
                 title={copyStatus() === 'ok' ? 'Copied!' : copyStatus() === 'failed' ? 'Copy failed' : 'Copy gravity, friction and matrix'}
